@@ -1,0 +1,15 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react-native",
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["./components/*"],
+      "@screens/*": ["./screens/*"],
+      "@app/*": ["./*"],
+      "@assets/*": ["../assets/*"]
+    }
+  },
+  "exclude": ["metro.config.js"]
+}
